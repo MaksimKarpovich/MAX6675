@@ -25,6 +25,6 @@ This repository contains the solution for cold junction compensated K-Thermocoup
 + Press the CS to the ground
 + Read 2 bytes by SPI
 + Press the CS to the power
-+ Bitwise shift right by **5** bits (**3** for 0-2 bits, and **2** to convert to Celsius)
++ Bitwise shift right by **5** bits (**3** bits shift for 0-2 bits remove, and **2** bits shift to convert to Celsius)
 + Waits for chip ready (according to Datasheet, the max time for conversion is 220ms)
 + Repeat
